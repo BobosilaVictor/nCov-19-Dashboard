@@ -5,35 +5,35 @@ import csv
 import pandas as pd
 
 
-def extractDataFromSite(pathCoordinates):
+def extractDataFromSite(pathCoordinates, pathSite):
     try:
-        req = Request('http://www.ms.ro/category/stiri/', headers={'User-Agent': 'Mozilla/5.0'})
+        req = Request(pathSite, headers={'User-Agent': 'Mozilla/5.0'})
         source = urlopen(req).read()
         soup = bs.BeautifulSoup(source, 'html.parser')
         c = soup.find('table')
         head = c.find('tr')
         head = head.find_all('td')
         h = []
-        # get the header
+        # get the header and remove diacritics
         for i in head:
             text = unidecode.unidecode(i.text)
             h.append(text)
 
         # print(h)
         table = {}
-        # get the data from table
+        # get the data from table and remove diacritics
         for tr in c.find_all('tr')[1:-2]:
             tr_list = []
             for td in tr.find_all('td'):
                 text_td = unidecode.unidecode(td.text)
                 tr_list.append(text_td)
+            # Create dictionary with the country name as the key and nr of deaths etc.. as values
             table[tr_list[1]] = tr_list[2:]
 
         coordinates = pd.read_csv(pathCoordinates)
         h.append(coordinates.columns[-2])
         h.append(coordinates.columns[-1])
-
-        # print(h)
+        # Add the coordinates for every country
         for (judet, lat, long) in coordinates.values:
             if judet in table:
                 # print('got you')
@@ -59,7 +59,7 @@ def createCsv(path, header, table):
                 i = i + 1
 
         except IndexError:
-            print("Not enough coutries")
+            print("Not enough countries")
 
 
 # TO DO
@@ -68,5 +68,7 @@ def extractDate():
     pass
 
 
-header, table = extractDataFromSite('coordonateTari.csv')
+# Give path to the csv containing the coordinates, link of the website
+# returns the header and the data inside the table
+header, table = extractDataFromSite('coordonateTari.csv', 'http://www.ms.ro/category/stiri/')
 createCsv('numeDoc1.csv', header, table)
