@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -22,100 +19,64 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4acb6e85-d52b-4aae-9fac-5324087ad66c" name="Default Changelist" comment="Comentarii/explicatii adaugate">
+    <list default="true" id="644f6039-da8c-49da-8dee-a2b50ea1ab73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datadump.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testDatabase/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testDatabase/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testDatabase/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testDatabase/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testDatabase/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testDatabase/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testDatabase/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Database.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Database.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coordonate.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coordonateTari.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extractData.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getCoordinates.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numeDoc1.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1kEoArAmuex6Li8ilP0Fpm6FPry" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1kQOTGPblr9ZOatMhPSR2NxLviB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/getCoordinates.py" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-  </component>
-  <component name="RunManager" selected="Python.extractData">
-    <configuration name="extractData" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="Database" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/extractData.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="getCoordinates" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="Database" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getCoordinates.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Python.extractData" />
-      <item itemvalue="Python.getCoordinates" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4acb6e85-d52b-4aae-9fac-5324087ad66c" name="Default Changelist" comment="" />
-      <created>1605274971714</created>
+      <changelist id="644f6039-da8c-49da-8dee-a2b50ea1ab73" name="Default Changelist" comment="" />
+      <created>1605629355861</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1605274971714</updated>
+      <updated>1605629355861</updated>
     </task>
-    <task id="LOCAL-00001" summary="Comentarii/explicatii adaugate">
-      <created>1605442808173</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1605442808173</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,70 +92,16 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Get coordinates and improve data collection" />
-    <MESSAGE value="Comentarii/explicatii adaugate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comentarii/explicatii adaugate" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="586" y="203" key="#Inspections" timestamp="1605303013282">
+    <state x="719" y="327" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605635035747">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="586" y="203" key="#Inspections/0.0.1920.1050@0.0.1920.1050" timestamp="1605303013282" />
-    <state x="698" y="349" key="#Notifications" timestamp="1605442554043">
+    <state x="719" y="327" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1605635035747" />
+    <state x="1103" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1605631554630">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="698" y="349" key="#Notifications/0.0.1920.1050@0.0.1920.1050" timestamp="1605442554043" />
-    <state x="461" y="107" width="1092" height="853" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605297232532">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="461" y="107" width="1092" height="853" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605297232532" />
-    <state x="286" y="343" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1605276867883">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="286" y="343" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605276867883" />
-    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605350141031">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605350141031" />
-    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1605443237333">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605443237333" />
-    <state x="500" y="267" width="443" height="499" key="EnvironmentVariablesDialog" timestamp="1605277772693">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="500" y="267" width="443" height="499" key="EnvironmentVariablesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605277772693" />
-    <state x="740" y="292" key="FileChooserDialogImpl" timestamp="1605277873997">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="740" y="292" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1605277873997" />
-    <state width="1899" height="289" key="GridCell.Tab.0.bottom" timestamp="1605303173612">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1899" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605303173612" />
-    <state width="1899" height="289" key="GridCell.Tab.0.center" timestamp="1605303173612">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1899" height="289" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605303173612" />
-    <state width="1899" height="289" key="GridCell.Tab.0.left" timestamp="1605303173612">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1899" height="289" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605303173612" />
-    <state width="1899" height="289" key="GridCell.Tab.0.right" timestamp="1605303173612">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1899" height="289" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605303173612" />
-    <state x="922" y="146" key="SettingsEditor" timestamp="1605442801320">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="922" y="146" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605442801320" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1605443170938">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605443170938" />
-    <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605443114430">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605443114430" />
+    <state x="1103" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605631554630" />
   </component>
 </project>
