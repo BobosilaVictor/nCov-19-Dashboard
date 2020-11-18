@@ -2,19 +2,21 @@ from django.test import TestCase
 
 # Create your tests here.
 
-from .models import County
-import csv
+
+import pandas as pd
 
 
-def UploadCsvData():
-    with open('getData/coordonateTari.csv', 'r', encoding='utf8') as csvfile:
-        csv_reader = csv.reader(csvfile)
-        for i in csv_reader:
 
-            name, lat, long = i.split(sep=',')
-            c = County(name, lat, long)
-            try:
-                c.save()
-            except():
-                # if the're a problem anywhere, you wanna know about it
-                print("there was a problem with line")
+def setCoorinates():
+    file = pd.read_csv('getData/coordonateTari.csv')
+    for i in file.values:
+        name, lat, long = i[0], i[1], i[2]
+        #c = County(name, lat, long)
+        # try:
+        #     c.save()
+        # except():
+        #     # if the're a problem anywhere, you wanna know about it
+        #     print("there was a problem with line")
+
+
+setCoorinates()

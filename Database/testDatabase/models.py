@@ -1,13 +1,15 @@
 from django.db import models
-from django_mysql.models import Model
+import pandas as pd
 
 
 # Create your models here.
 
 class County(models.Model):
     name = models.CharField(max_length=100, primary_key=True)
-    latitude = models.IntegerField()
-    longitude = models.IntegerField()
+    latitude = models.FloatField()
+    longitude = models.FloatField()
+
+
 
 
 class DailyReport(models.Model):
