@@ -15,6 +15,6 @@ def UploadCsvData():
             c = County(name, lat, long)
             try:
                 c.save()
-            except:
+            except():
                 # if the're a problem anywhere, you wanna know about it
                 print("there was a problem with line")

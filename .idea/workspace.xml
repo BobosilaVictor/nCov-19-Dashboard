@@ -1,40 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="40885fd2-56f1-49b8-952b-8098e3acf2ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Database/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/database/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/database/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/database/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/database/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/database/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/datadump.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/testDatabase/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/testDatabase/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/testDatabase/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/testDatabase/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/testDatabase/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/testDatabase/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/testDatabase/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="40885fd2-56f1-49b8-952b-8098e3acf2ac" name="Default Changelist" comment="createde sqlLite Database">
+      <change afterPath="$PROJECT_DIR$/Database/testDatabase/templates/index.html.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/testDatabase/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/.idea/Database.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Database/.idea/Database.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Database/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Database/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Database/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Database/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/coordonate.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/coordonateTari.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/extractData.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/getCoordinates.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/numeDoc1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/database/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/database/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/testDatabase/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/testDatabase/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/testDatabase/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/testDatabase/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,7 +87,30 @@
       <option name="presentableId" value="Default" />
       <updated>1605273632115</updated>
     </task>
+    <task id="LOCAL-00001" summary="createde sqlLite Database">
+      <created>1605688132958</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605688132958</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="createde sqlLite Database" />
+    <option name="LAST_COMMIT_MESSAGE" value="createde sqlLite Database" />
   </component>
   <component name="WindowStateProjectService">
     <state x="698" y="349" key="#Notifications" timestamp="1605642462466">
@@ -107,5 +133,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605642523782" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1605688139126">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605688139126" />
   </component>
 </project>
