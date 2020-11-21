@@ -19,18 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40885fd2-56f1-49b8-952b-8098e3acf2ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Database/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/testDatabase/getData/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Database/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/datadump.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Database/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/testDatabase/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/testDatabase/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/testDatabase/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/testDatabase/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/testDatabase/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/testDatabase/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/testDatabase/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/testDatabase/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="40885fd2-56f1-49b8-952b-8098e3acf2ac" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
