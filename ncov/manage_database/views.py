@@ -2,8 +2,6 @@ from django.shortcuts import render
 from django.contrib import messages
 from django.contrib.auth.decorators import permission_required
 from .models import County, DailyReport
-import csv
-import io
 import pandas as pd
 
 # Create your views here.
