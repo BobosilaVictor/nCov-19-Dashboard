@@ -19,17 +19,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40885fd2-56f1-49b8-952b-8098e3acf2ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Database/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/testDatabase/getData/__init__.py" afterDir="false" />
+    <list default="true" id="40885fd2-56f1-49b8-952b-8098e3acf2ac" name="Default Changelist" comment="Go back">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Database/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/datadump.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Database/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/testDatabase/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/testDatabase/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/testDatabase/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/testDatabase/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/testDatabase/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/testDatabase/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/testDatabase/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/testDatabase/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/.idea/Database.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/database/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/database/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/database/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/database/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/database/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/testDatabase/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/testDatabase/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/testDatabase/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/testDatabase/getData/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/testDatabase/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/testDatabase/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/testDatabase/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/testDatabase/views.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +54,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -47,11 +62,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kElSY0YT9ls2HDOB0fFEqpj5U0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
   <component name="RecentsManager">
@@ -62,7 +81,7 @@
       <recent name="F:\Projects\nCov-19-Dashboard\database\database" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.admin">
+  <component name="RunManager" selected="Python.extractData">
     <configuration name="admin" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nCov-19-Dashboard" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,7 +103,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="extractData" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nCov-19-Dashboard" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,11 +111,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/database" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ncov/manage_database/Scripts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/database/manage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ncov/manage_database/Scripts/extractData.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,7 +124,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="getCoordinates" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nCov-19-Dashboard" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -113,11 +132,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/database/testDatabase" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ncov/manage_database/Scripts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/database/testDatabase/models.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ncov/manage_database/Scripts/getCoordinates.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -212,11 +231,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.extractData" />
+        <item itemvalue="Python.getCoordinates" />
         <item itemvalue="Python.admin" />
         <item itemvalue="Python.uploadData (1)" />
         <item itemvalue="Python.uploadData (1)" />
-        <item itemvalue="Python.uploadData (1)" />
-        <item itemvalue="Python.manage" />
       </list>
     </recent_temporary>
   </component>
@@ -284,9 +303,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="284" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605716815062" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1605692068431">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1606148749954">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605692068431" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606148749954" />
   </component>
 </project>
