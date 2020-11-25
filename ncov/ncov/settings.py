@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+from django.conf.locale.ro import formats as ro_formats
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -82,7 +83,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
+ro_formats.DATETIME_FORMAT = "%d-%m%-%Y"
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

@@ -32,17 +32,6 @@ def extractDataFromSite(pathCoordinates, pathSite, date):
             tr_list.append(date)
             # Create dictionary with the country name as the key and nr of deaths etc.. as values
             table[tr_list[1]] = tr_list[2:]
-
-        coordinates = pd.read_csv(pathCoordinates)
-        h.append(coordinates.columns[-2])
-        h.append(coordinates.columns[-1])
-        # Add the coordinates for every country
-        for (judet, lat, long) in coordinates.values:
-            if judet in table:
-                # print('got you')
-                table[judet].append(lat)
-                table[judet].append(long)
-
         return h, table
     except FileNotFoundError:
         print("Need coordinates")
@@ -58,8 +47,7 @@ def createCsv(path, header, table):
             for row in table:
                 writer.writerow(
                     {fieldnames[0]: row, fieldnames[1]: table[row][0], fieldnames[2]: table[row][1],
-                     fieldnames[3]: table[row][2], fieldnames[4]: table[row][3], fieldnames[5]: table[row][4],
-                     fieldnames[6]: table[row][5]})
+                     fieldnames[3]: table[row][2], fieldnames[4]: table[row][3]})
         except IndexError:
             print("Not enough countries")
 

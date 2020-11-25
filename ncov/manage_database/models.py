@@ -1,5 +1,5 @@
 from django.db import models
-
+import datetime
 
 # Create your models here.
 class County(models.Model):
@@ -13,3 +13,4 @@ class DailyReport(models.Model):
     confirmedCases = models.IntegerField()
     newCases = models.IntegerField()
     incidence = models.FloatField()
+    date = models.DateField(default=datetime.datetime.today().strftime('%d-%m-%Y'))
