@@ -61,7 +61,7 @@ def main():
     try:
         x = datetime.datetime.now()
         d = x.strftime("%d-%m-%Y")
-        d_ymd = x.strftime('%Y/%m/%d')
+        d_ymd = x.strftime('%Y-%m-%d')
         # http://www.ms.ro/2020/12/04/buletin-informativ-04-12-2020/
         path = 'http://www.ms.ro/' + x.strftime('%Y/%m/%d') + '/buletin-informativ-' + d + '/'
         header, table = extractDataFromSite('coordonateTari.csv', path, d_ymd)

@@ -19,11 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40885fd2-56f1-49b8-952b-8098e3acf2ac" name="Default Changelist" comment="Add daily reports to database using update-daily/">
-      <change afterPath="$PROJECT_DIR$/ncov/03-12-2020.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov/manage_database/Scripts/03-12-2020.csv" afterDir="false" />
+    <list default="true" id="40885fd2-56f1-49b8-952b-8098e3acf2ac" name="Default Changelist" comment="New csv files">
+      <change afterPath="$PROJECT_DIR$/ncov/05-12-2020.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ncov/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/manage_database/Scripts/05-12-2020.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/manage_database/Scripts/05-12-2020.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/manage_database/Scripts/extractData.py" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/manage_database/Scripts/extractData.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607173675515</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="New csv files">
+      <created>1607179546879</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607179546879</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -308,6 +315,7 @@
     <MESSAGE value="Eliminated lat and long from when creating daily report" />
     <MESSAGE value="Some improvements" />
     <MESSAGE value="Add daily reports to database using update-daily/" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add daily reports to database using update-daily/" />
+    <MESSAGE value="New csv files" />
+    <option name="LAST_COMMIT_MESSAGE" value="New csv files" />
   </component>
 </project>
