@@ -65,7 +65,7 @@ def main():
         # http://www.ms.ro/2020/12/04/buletin-informativ-04-12-2020/
         path = 'http://www.ms.ro/' + x.strftime('%Y/%m/%d') + '/buletin-informativ-' + d + '/'
         header, table = extractDataFromSite('coordonateTari.csv', path, d_ymd)
-        createCsv(d_ymd + '.csv', header, table)
+        createCsv(d + '.csv', header, table)
     except HTTPError:
         print("Data for today was not yet uploaded")
         x = datetime.datetime.now()
