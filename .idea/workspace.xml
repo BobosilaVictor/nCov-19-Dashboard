@@ -19,17 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40885fd2-56f1-49b8-952b-8098e3acf2ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Database/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/testDatabase/getData/__init__.py" afterDir="false" />
+    <list default="true" id="40885fd2-56f1-49b8-952b-8098e3acf2ac" name="Default Changelist" comment="Some improvements">
+      <change afterPath="$PROJECT_DIR$/ncov/manage_database/migrations/0003_auto_20201205_1455.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Database/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/datadump.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Database/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/testDatabase/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/testDatabase/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/testDatabase/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/testDatabase/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/testDatabase/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/testDatabase/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/testDatabase/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/testDatabase/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/04-12-2020.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/04-12-2020.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/manage_database/Scripts/04-12-2020.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/manage_database/Scripts/04-12-2020.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/manage_database/Scripts/extractData.py" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/manage_database/Scripts/extractData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/manage_database/migrations/0002_dailyreport_date.py" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/manage_database/migrations/0002_dailyreport_date.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/manage_database/migrations/0003_remove_dailyreport_date.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/manage_database/migrations/0004_dailyreport_date.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/manage_database/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/manage_database/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/manage_database/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/manage_database/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/ncov/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/ncov/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -47,11 +50,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kElSY0YT9ls2HDOB0fFEqpj5U0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
   <component name="RecentsManager">
@@ -62,7 +70,7 @@
       <recent name="F:\Projects\nCov-19-Dashboard\database\database" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.admin">
+  <component name="RunManager" selected="Python.models">
     <configuration name="admin" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nCov-19-Dashboard" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,7 +92,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="extractData" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nCov-19-Dashboard" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,11 +100,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/database" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ncov/manage_database/Scripts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/database/manage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ncov/manage_database/Scripts/extractData.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="getCoordinates" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="nCov-19-Dashboard" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ncov/manage_database/Scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ncov/manage_database/Scripts/getCoordinates.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -113,11 +142,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/database/testDatabase" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ncov/manage_database" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/database/testDatabase/models.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ncov/manage_database/models.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,27 +168,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/database/testDatabase/uploadData.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="uploadData" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="nCov-19-Dashboard" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/database/testDatabase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:\Projects\nCov-19-Dashboard\database\uploadData.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -212,11 +220,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.models" />
+        <item itemvalue="Python.extractData" />
+        <item itemvalue="Python.getCoordinates" />
         <item itemvalue="Python.admin" />
         <item itemvalue="Python.uploadData (1)" />
-        <item itemvalue="Python.uploadData (1)" />
-        <item itemvalue="Python.uploadData (1)" />
-        <item itemvalue="Python.manage" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +251,42 @@
       <option name="project" value="LOCAL" />
       <updated>1605692064789</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Go back">
+      <created>1606231984416</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606231984416</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Go back">
+      <created>1606232251796</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606232251796</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Refined extractData.py and added date to the CSV">
+      <created>1606315779046</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606315779047</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Eliminated lat and long from when creating daily report">
+      <created>1606325267517</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606325267517</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Some improvements">
+      <created>1607169199435</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607169199435</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,34 +302,12 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="createde sqlLite Database" />
     <MESSAGE value="Go back" />
-    <option name="LAST_COMMIT_MESSAGE" value="Go back" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="698" y="349" key="#Notifications" timestamp="1605642462466">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="698" y="349" key="#Notifications/0.0.1920.1050@0.0.1920.1050" timestamp="1605642462466" />
-    <state width="1899" height="284" key="GridCell.Tab.0.bottom" timestamp="1605716815062">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1899" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605716815062" />
-    <state width="1899" height="284" key="GridCell.Tab.0.center" timestamp="1605716815062">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1899" height="284" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605716815062" />
-    <state width="1899" height="284" key="GridCell.Tab.0.left" timestamp="1605716815062">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1899" height="284" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605716815062" />
-    <state width="1899" height="284" key="GridCell.Tab.0.right" timestamp="1605716815062">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1899" height="284" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605716815062" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1605692068431">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605692068431" />
+    <MESSAGE value="Refined extractData.py and added date to the CSV" />
+    <MESSAGE value="Eliminated lat and long from when creating daily report" />
+    <MESSAGE value="Some improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some improvements" />
   </component>
 </project>
