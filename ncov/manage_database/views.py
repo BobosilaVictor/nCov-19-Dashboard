@@ -39,7 +39,7 @@ def county_upload(request):
 @permission_required('admin.can_add_log_entry')
 def daily_upload(request):
     template = "county_upload.html"
-#Judet,Numar de cazuri confirmate(total),Numar de cazuri nou confirmate,Incidenta  inregistrata la 14 zile,Date
+    # Judet,Numar de cazuri confirmate(total),Numar de cazuri nou confirmate,Incidenta  inregistrata la 14 zile,Date
     prompt = {
         'order': 'Order of the CSV should be County name,number of cases, number of new cases, incidence, date'
     }

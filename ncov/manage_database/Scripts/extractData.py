@@ -1,3 +1,5 @@
+from urllib.error import HTTPError
+
 import unidecode
 import bs4 as bs
 from urllib.request import Request, urlopen
@@ -52,24 +54,29 @@ def createCsv(path, header, table):
             print("Not enough countries")
 
 
-# Use to get data from the day before
-
-current_date = datetime.datetime.today().strftime('%d-%m-%Y')
-nr = int(current_date[:2]) - 1
-current_date = str(nr) + current_date[2:]
-path = 'http://www.ms.ro/2020/11/24/buletin-informativ-' + current_date + '/'
-header, table = extractDataFromSite('coordonateTari.csv', path, current_date)
-createCsv(current_date + '.csv', header, table)
-
-
 def main():
     try:
-        current_date = datetime.datetime.today().strftime('%d-%m-%Y')
-        path = 'http://www.ms.ro/2020/11/24/buletin-informativ-' + current_date + '/'
-        # Give path to the csv containing the coordinates, link of the website
-        # returns the header and the data inside the table
-        header, table = extractDataFromSite('coordonateTari.csv', path, current_date)
-        createCsv(current_date + '.csv', header, table)
-
-    except:
+        x = datetime.datetime.now()
+        d = x.strftime("%d-%m-%Y")
+        # http://www.ms.ro/2020/12/04/buletin-informativ-04-12-2020/
+        path = 'http://www.ms.ro/' + x.strftime('%Y/%m/%d') + '/buletin-informativ-' + d + '/'
+        print(path)
+        header, table = extractDataFromSite('coordonateTari.csv', path, d)
+        createCsv(x.strftime('%d-%m-%Y') + '.csv', header, table)
+    except HTTPError:
         print("Data for today was not yet uploaded")
+        x = datetime.datetime.now()
+        yesterday = x.strftime("%d")
+        yesterday = str(int(yesterday) - 1)
+        if int(yesterday) < 10 :
+            yesterday = '0' + yesterday
+        d = yesterday + x.strftime("-%m-%Y")
+        # http://www.ms.ro/2020/12/04/buletin-informativ-04-12-2020/
+        path = 'http://www.ms.ro/' + x.strftime('%Y/%m/') + yesterday + '/buletin-informativ-' + yesterday + x.strftime(
+            "-%m-%Y") + '/'
+        print(path)
+        header, table = extractDataFromSite('coordonateTari.csv', path, d)
+        createCsv(yesterday + x.strftime('-%m-%Y') + '.csv', header, table)
+
+
+main()
