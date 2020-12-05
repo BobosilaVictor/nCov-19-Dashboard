@@ -43,10 +43,13 @@ def extractDataFromSite(pathCoordinates, pathSite, date):
 def createCsv(path, header, table):
     with open(path, 'w', newline='', encoding='utf-8') as csvfile:
         fieldnames = header
+        # print(header)
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         try:
             for row in table:
+                table[row][2] = table[row][2].replace(',', '.')
+                table[row][2] = float(table[row][2])
                 writer.writerow(
                     {fieldnames[0]: row, fieldnames[1]: table[row][0], fieldnames[2]: table[row][1],
                      fieldnames[3]: table[row][2], fieldnames[4]: table[row][3]})
@@ -58,25 +61,27 @@ def main():
     try:
         x = datetime.datetime.now()
         d = x.strftime("%d-%m-%Y")
+        d_ymd = x.strftime('%Y/%m/%d')
         # http://www.ms.ro/2020/12/04/buletin-informativ-04-12-2020/
         path = 'http://www.ms.ro/' + x.strftime('%Y/%m/%d') + '/buletin-informativ-' + d + '/'
-        print(path)
-        header, table = extractDataFromSite('coordonateTari.csv', path, d)
-        createCsv(x.strftime('%d-%m-%Y') + '.csv', header, table)
+        header, table = extractDataFromSite('coordonateTari.csv', path, d_ymd)
+        createCsv(d_ymd + '.csv', header, table)
     except HTTPError:
         print("Data for today was not yet uploaded")
         x = datetime.datetime.now()
         yesterday = x.strftime("%d")
         yesterday = str(int(yesterday) - 1)
-        if int(yesterday) < 10 :
+        if int(yesterday) < 10:
             yesterday = '0' + yesterday
         d = yesterday + x.strftime("-%m-%Y")
+        d_ymd = x.strftime('%Y/%m/') + yesterday
+
         # http://www.ms.ro/2020/12/04/buletin-informativ-04-12-2020/
-        path = 'http://www.ms.ro/' + x.strftime('%Y/%m/') + yesterday + '/buletin-informativ-' + yesterday + x.strftime(
-            "-%m-%Y") + '/'
+        path = 'http://www.ms.ro/' + d_ymd + '/buletin-informativ-' + d + '/'
         print(path)
-        header, table = extractDataFromSite('coordonateTari.csv', path, d)
-        createCsv(yesterday + x.strftime('-%m-%Y') + '.csv', header, table)
+        d_db_format = x.strftime("%Y-%m-") + yesterday
+        header, table = extractDataFromSite('coordonateTari.csv', path, d_db_format)
+        createCsv(d + '.csv', header, table)
 
 
 main()

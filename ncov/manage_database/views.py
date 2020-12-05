@@ -53,7 +53,7 @@ def daily_upload(request):
         messages.error(request, 'Not a csv file!')
     file = pd.read_csv(csv_file.name)
     for row in file.values:
-        County.objects.update_or_create(
+        DailyReport.objects.update_or_create(
             countyName=row[0],
             confirmedCases=row[1],
             newCases=row[2],
