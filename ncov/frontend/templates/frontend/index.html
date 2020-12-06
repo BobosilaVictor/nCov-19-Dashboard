@@ -23,7 +23,7 @@
 
 <body>
 <!-- Aici este sidebarul  -->
-{%include 'frontend/partials/_sidebar.html' %}
+{%include 'frontend/partials/_sidebar2.html' %}
 <!-- Aici se termina sidebarul  -->
 
 
@@ -32,7 +32,7 @@
 
     <!-- Page Content  -->
 
-      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4" style="height:100%;">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
           <h1 class="h2">Dashboard</h1>
           <div class="btn-toolbar mb-2 mb-md-0">
@@ -42,16 +42,16 @@
             </div>
           </div>
         </div>
-        <div class="container-fluid mt--7 bg-secondary">
-          <div class="row">
-            <div class="col-xl-8 mb-5 mb-xl-0">
+        <div class="container-fluid mt--7 bg-secondary" >
+          <div class="row" >
+            <div class="col-xl-8 mb-5 mb-xl-0" >
               <div class="card shadow fade-in-bottom">
                 <div class="card-body plotly worldmap">
                   <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/1.54.6/plotly.min.js"></script>
                     <div class="card-body plotly worldmap">
-              <div id="world_map" class="chart" style="height: 100%;"></div>
-            </div>
-                </div>
+                        <div id="world_map" class="chart" style="height:100%;"></div>
+                     </div>
+                    </div>
 
                 <div style="position: absolute; padding:1.25rem 1.5rem;">
                     <h6 class="text-uppercase text-muted ls-0 mb-1">Harta romaniei aici-></h6>
@@ -60,7 +60,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-4">  <!-- Growth interactive scatterplot -->
+            <div class="col-xl-4" >  <!-- Growth interactive scatterplot -->
               <div class="card bg-dark shadow fade-in-bottom">
                 <div class="card-header bg-transparent">
                   <div class="row align-items-center">
@@ -71,7 +71,7 @@
                   </div>
                 </div>
                 <div class="card-body plotly">
-                  <div id="realtime_growth_chart" class="chart" style="height: 310px;"></div>
+                  <div id="realtime_growth_chart" class="chart" style="height:310px;"></div>
                 </div>
               </div>
             </div>
@@ -79,6 +79,63 @@
 
         </div>
 
+        <div class="row mt-5">
+        <div class="col-xl-8 mb-5 mb-xl-0">   <!-- Global daily growth plot -->
+          <div class="card shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="text-uppercase text-muted ls-1 mb-1">Global | Daily</h6>
+                  <h2 class="mb-0">Daily Growth</h2>
+                </div>
+                <div class="col text-right">
+                  <a class="btn btn-sm btn-white" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Info"
+                      data-content="Daily time series of cases. Bars can be stacked for relative adjacent comparison by toggling 'confirmed' cases.">
+                      &nbsp;<i class="fas fa-info">&nbsp;</i>
+                    </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body plotly">
+              <div id="daily_growth_chart" class="chart"style="height: 310px;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4">
+          <div class="card shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="text-uppercase text-muted ls-1 mb-1">Global | Sortable</h6>
+                  <h2 class="mb-0">Cases</h2>
+                </div>
+                <div class="col text-right">
+                  <a href="#!" class="btn btn-sm btn-white">
+                    &nbsp;<i class="fas fa-download">&nbsp;</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <!-- cases table -->
+              <table id="cases_table" class="table align-items-center table-flush">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Country</th>
+                    <th scope="col">Confirmed</th>
+                    <th scope="col">Recovered</th>
+                    <th scope="col">Deaths</th>
+                    <th scope="col">Death Rate %</th>
+                  </tr>
+                </thead>
+                <tbody id="cases_table_body"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
         </main>
@@ -87,7 +144,8 @@
 
 
 </div>
-
+    <script defer src="static/js/fetch.js"></script>
+    <script defer src="static/js/custom.js"></script>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -97,7 +155,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
 
-    </script>
+
+
 </body>
 
 </html>
@@ -106,6 +165,7 @@
 <!-- Plotly.js CDN -->
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/1.54.6/plotly.min.js"></script>
 
+
 <!-- Load and display data -->
-<script defer src="static/js/fetch.js"></script>
+
 {% endblock javascripts %}
