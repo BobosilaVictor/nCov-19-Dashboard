@@ -60,17 +60,17 @@ def createCsv(path, header, table):
 def main():
     try:
         x = datetime.datetime.now()
-        d = x.strftime("%d-%m-%Y")
+        d = x.strftime('%Y/%m/%d')
         d_ymd = x.strftime('%Y/%m/%d')
         # http://www.ms.ro/2020/12/04/buletin-informativ-04-12-2020/
         path = 'http://www.ms.ro/' + x.strftime('%Y/%m/%d') + '/buletin-informativ-' + d + '/'
         header, table = extractDataFromSite('coordonateTari.csv', path, d_ymd)
-        createCsv(d_ymd + '.csv', header, table)
+        createCsv(d + '.csv', header, table)
     except HTTPError:
         print("Data for today was not yet uploaded")
         x = datetime.datetime.now()
         yesterday = x.strftime("%d")
-        yesterday = str(int(yesterday) - 1)
+        yesterday = str(int(yesterday) - 2)
         if int(yesterday) < 10:
             yesterday = '0' + yesterday
         d = yesterday + x.strftime("-%m-%Y")

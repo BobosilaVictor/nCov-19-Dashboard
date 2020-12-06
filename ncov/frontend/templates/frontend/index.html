@@ -48,13 +48,11 @@
               <div class="card shadow fade-in-bottom">
                 <div class="card-body plotly worldmap">
                   <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/1.54.6/plotly.min.js"></script>
-
-                  <div class="chart">
-                    {% autoescape off %}
-                    {{ romania_map }}
-                    {% endautoescape %}
-                  </div>
+                    <div class="card-body plotly worldmap">
+              <div id="world_map" class="chart" style="height: 100%;"></div>
+            </div>
                 </div>
+
                 <div style="position: absolute; padding:1.25rem 1.5rem;">
                     <h6 class="text-uppercase text-muted ls-0 mb-1">Harta romaniei aici-></h6>
                     <h2 class="text-dark mb-0">Romania</h2>
@@ -103,3 +101,11 @@
 </body>
 
 </html>
+{% block javascripts %}
+
+<!-- Plotly.js CDN -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/1.54.6/plotly.min.js"></script>
+
+<!-- Load and display data -->
+<script defer src="static/js/fetch.js"></script>
+{% endblock javascripts %}
