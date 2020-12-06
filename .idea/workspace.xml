@@ -27,7 +27,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ncov/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ncov/frontend/templates/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/frontend/templates/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ncov/frontend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/frontend/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ncov/frontend/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/frontend/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ncov/manage_database/Scripts/extractData.py" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/manage_database/Scripts/extractData.py" afterDir="false" />
     </list>

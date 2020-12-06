@@ -35,6 +35,6 @@ def daily (request):
     json2 = json.dumps(reprot_c_json)
 
 
-
+    json2
 
     return HttpResponse(json2, content_type="application/json")
