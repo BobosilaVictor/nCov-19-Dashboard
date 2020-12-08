@@ -1,6 +1,5 @@
 window.addEventListener("load", function() {
 load_world_map();
-load_realtime_growth_chart();
 
 
 });
@@ -71,7 +70,6 @@ function load_world_map() {
     xhttp.open("GET", "daily_report");
     xhttp.send();
 }
-
 
 
 function load_realtime_growth_chart() {

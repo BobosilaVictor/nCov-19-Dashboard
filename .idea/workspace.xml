@@ -20,16 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40885fd2-56f1-49b8-952b-8098e3acf2ac" name="Default Changelist" comment="New csv files">
-      <change afterPath="$PROJECT_DIR$/ncov/frontend/templates/frontend/partials/_sidebar2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov/manage_database/Scripts/06-12-2020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ncov/manage_database/migrations/0005_auto_20201208_1207.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ncov/staticfiles/js/fetch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ncov/coordonateTari.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/coordonateTari.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ncov/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/frontend/counties.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/frontend/getdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/frontend/getdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/frontend/map.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/frontend/names1.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ncov/frontend/templates/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/frontend/templates/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/frontend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/frontend/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ncov/frontend/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/frontend/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ncov/ncov/static/css/mycss.css" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/ncov/static/css/mycss.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ncov/ncov/static/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/ncov/static/js/custom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ncov/ncov/static/js/fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/ncov/static/js/fetch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/staticfiles/css/mycss.css" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/staticfiles/css/mycss.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncov/staticfiles/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/ncov/staticfiles/js/custom.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +45,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -304,22 +310,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="New csv files" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1607272836673">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1607283208740">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/1920.64.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1607272836673" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1607272836673">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/1920.64.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1607283208740" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1607283208740">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/1920.64.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1607272836673" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1607272836673">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/1920.64.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1607283208740" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1607283208740">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/1920.64.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1607272836673" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1607272836673">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/1920.64.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1607283208740" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1607283208740">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/1920.64.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1607272836673" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/1920.64.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1607283208740" />
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607259784484">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
