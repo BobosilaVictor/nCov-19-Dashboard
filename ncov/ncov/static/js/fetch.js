@@ -22,6 +22,7 @@ function load_world_map() {
                         "Lat: " + Object.values(data["lat"])[index] + "<br>" +
                         "Long: " + Object.values(data["long"])[index] + "<br>" +
                         "New: " + Object.values(data["nou"])[index] + "<br>" +
+                        "Date: " + Object.values(data["dates"])[index] + "<br>" +
                         "Inicdence: " + Object.values(data["incidenta"])[index]
                     );
                 }
