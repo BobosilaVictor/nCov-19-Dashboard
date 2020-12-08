@@ -77,15 +77,23 @@ def growth(date_string=None, weekly=False, monthly=False):
     report = daily_rep.objects.all()
     report_c = serializers.serialize('json', report)
     report_c_json = json.loads(report_c)
-    dict_final={}
     dict_conf={}
+    sum_of = 0
+    for i in range(0, len(report_c_json)):
+       sum_of += report_c_json[i]['fields']['confirmedCases']
 
     for i in range(0, len(report_c_json)):
-        dict_conf[report_c_json[i]['fields']['date']] = str(report_c_json[i]['fields']['confirmedCases'])
+        dict_conf[report_c_json[i]['fields']['date']] = report_c_json[i]['fields']['confirmedCases']
 
-    growth_df = pd.DataFrame(data=dict_conf)
+    print(dict_conf)
+    growth_df = pd.DataFrame.from_dict(dict_conf,orient='index',columns=['conf'])
+    #growth_df.index = growth_df.index.rename('Date'))
+   # growth_df = growth_df.set_index('Date')
+   # growth_df.index = growth_df.index.rename('Date')
     print(growth_df)
-    growth_df.index = growth_df.index.rename('Date')
+
+
+
 
     yesterday = pd.Timestamp('now').date() - pd.Timedelta(days=1)
     print(growth_df)
@@ -112,7 +120,7 @@ def growth(date_string=None, weekly=False, monthly=False):
 def realtime_growth(request):
     df = growth()
 
-   # df.index = pd.to_datetime(df.index)
-   # df.index = df.index.strftime('%Y-%m-%d')
+    df.index = pd.to_datetime(df.index)
+    df.index = df.index.strftime('%Y-%m-%d')
 
     return HttpResponse(df.to_json(orient='columns'), content_type='application/json')
