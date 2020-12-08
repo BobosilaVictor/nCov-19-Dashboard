@@ -1,6 +1,5 @@
 window.addEventListener("load", function() {
 load_world_map();
-load_realtime_growth_chart();
 
 
 });
@@ -22,7 +21,6 @@ function load_world_map() {
                         "Lat: " + Object.values(data["lat"])[index] + "<br>" +
                         "Long: " + Object.values(data["long"])[index] + "<br>" +
                         "New: " + Object.values(data["nou"])[index] + "<br>" +
-                        "Date: " + Object.values(data["dates"])[index] + "<br>" +
                         "Inicdence: " + Object.values(data["incidenta"])[index]
                     );
                 }
@@ -74,7 +72,6 @@ function load_world_map() {
 }
 
 
-
 function load_realtime_growth_chart() {
     var xhttp = new XMLHttpRequest();
 
@@ -82,18 +79,33 @@ function load_realtime_growth_chart() {
         if (this.readyState == 4 && this.status == 200) {
             var data = JSON.parse(this.response);
 
-            var dates = Object.keys(data["conf"])
+            var dates = Object.keys(data["Confirmed"])
 
             var confirmed_trace = {
                 x: dates,
-                y: Object.values(data["conf"]),
+                y: Object.values(data["Confirmed"]),
                 name: "Confirmed",
                 line: {color: "#8965E0", width: 4}
             };
 
+            var recovered_trace = {
+                x: dates,
+                y: Object.values(data["Recovered"]),
+                name: "Recovered",
+                line: {color: "#2DCE89", width: 4}
+            };
 
+            var deaths_trace = {
+                x: dates,
+                y: Object.values(data["Deaths"]),
+                name: "Deaths",
+                line: {
+                    color: "#F9345E",
+                    width: 4
+                }
+            };
 
-            var plot_data = [confirmed_trace];
+            var plot_data = [confirmed_trace, recovered_trace, deaths_trace];
 
             var plot_layout = {
                 paper_bgcolor:'rgba(0,0,0,0)',
