@@ -87,13 +87,7 @@ def growth(date_string=None, weekly=False, monthly=False):
 
     print(dict_conf)
     growth_df = pd.DataFrame.from_dict(dict_conf,orient='index',columns=['conf'])
-    #growth_df.index = growth_df.index.rename('Date'))
-   # growth_df = growth_df.set_index('Date')
-   # growth_df.index = growth_df.index.rename('Date')
     print(growth_df)
-
-
-
 
     yesterday = pd.Timestamp('now').date() - pd.Timedelta(days=1)
     print(growth_df)
